@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DesignYourself</title>
+    <link>https://zhengxixuan.github.io/</link>
+    <description>Recent content on DesignYourself</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>郑嘻嘻</copyright>
+    
+	<atom:link href="https://zhengxixuan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About me</title>
+      <link>https://zhengxixuan.github.io/about/</link>
+      <pubDate>Wed, 24 Aug 2016 17:51:42 +0000</pubDate>
+      
+      <guid>https://zhengxixuan.github.io/about/</guid>
+      <description>Github: monkeyWzr</description>
+    </item>
+    
+  </channel>
+</rss>
