@@ -3,20 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://zhengxixuan.github.io/about/</loc>
-    <lastmod>2016-08-24T17:51:42+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://zhengxixuan.github.io/categories/</loc>
+    <lastmod>2017-08-30T22:43:19+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhengxixuan.github.io/</loc>
+    <loc>https://zhengxixuan.github.io/categories/letters/</loc>
+    <lastmod>2017-08-30T22:43:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhengxixuan.github.io/posts/</loc>
+    <lastmod>2017-08-30T22:43:19+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://zhengxixuan.github.io/tags/</loc>
+    <lastmod>2017-08-30T22:43:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhengxixuan.github.io/posts/2017-08-30-a-letter-from-ege-25-to-18/</loc>
+    <lastmod>2017-08-30T22:43:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhengxixuan.github.io/tags/%E6%84%9F%E6%82%9F/</loc>
+    <lastmod>2017-08-30T22:43:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhengxixuan.github.io/</loc>
+    <lastmod>2017-08-30T22:43:19+08:00</lastmod>
   </url>
   
 </urlset>
