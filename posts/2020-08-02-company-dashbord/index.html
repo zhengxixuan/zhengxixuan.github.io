@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> 搭建企业经营分析看板 | 我以文字敬时光</title>
+  <meta name="description" content="喜欢番茄  喜欢橙子  喜欢晒太阳  喜欢三文鱼  喜欢Negroni">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="搭建企业经营分析看板" />
+<meta property="og:description" content="1. 项目需求 背景：运营团队主要负责流量运营（网站和APP）、用户运营、营销活动运营以及内容运营等方面的工作，他们每天都会沉淀一些运营数据。
+需求：搭建一个运营数据分析的看板，将运营数据通过图表的方式展现出来，让部门同事可以快速了解到关键的运营指标和即时的重要变化趋势。
+2. 流量分析 网站流量指标盘：包含 PV、UV、总访问量、平均停留时间、单次会话浏览页数、首页跳出率等等。
+APP 流量指标：包含每日启动次数、日活、日新、月活等等。
+多维流量分析：包括访问来源、终端类型、区域来源等等。
+3. 用户分析 3.1 用户运营分析 用户运营：日活跃用户、日新增用户、日流失用户、新增-流失趋势对比。
+3.2 用户构成分析 用户基本属性：性别、年龄、职业、地区、使用频次等等。
+4. 营销分析 营销分析可以按照总-分结构展开，先看总销售情况，再细分至主要业务、主要产品。
+5. 内容分析 内容分析中常用的是词频统计，从搜索关键词中发现偏好。
+小结 本次使用阿里云的 Quick BI 数据可视化分析平台，导入 csv 文件，搭建经营分析看板。数据源是固定的，因此也无法展示实时数据，后续可尝试直连 SQL 数据库，获取即时动态的数据。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhengxixuan.github.io/posts/2020-08-02-company-dashbord/" />
+<meta property="article:published_time" content="2020-08-02T20:42:00+00:00" />
+<meta property="article:modified_time" content="2020-08-02T20:42:00+00:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="搭建企业经营分析看板"/>
+<meta name="twitter:description" content="1. 项目需求 背景：运营团队主要负责流量运营（网站和APP）、用户运营、营销活动运营以及内容运营等方面的工作，他们每天都会沉淀一些运营数据。
+需求：搭建一个运营数据分析的看板，将运营数据通过图表的方式展现出来，让部门同事可以快速了解到关键的运营指标和即时的重要变化趋势。
+2. 流量分析 网站流量指标盘：包含 PV、UV、总访问量、平均停留时间、单次会话浏览页数、首页跳出率等等。
+APP 流量指标：包含每日启动次数、日活、日新、月活等等。
+多维流量分析：包括访问来源、终端类型、区域来源等等。
+3. 用户分析 3.1 用户运营分析 用户运营：日活跃用户、日新增用户、日流失用户、新增-流失趋势对比。
+3.2 用户构成分析 用户基本属性：性别、年龄、职业、地区、使用频次等等。
+4. 营销分析 营销分析可以按照总-分结构展开，先看总销售情况，再细分至主要业务、主要产品。
+5. 内容分析 内容分析中常用的是词频统计，从搜索关键词中发现偏好。
+小结 本次使用阿里云的 Quick BI 数据可视化分析平台，导入 csv 文件，搭建经营分析看板。数据源是固定的，因此也无法展示实时数据，后续可尝试直连 SQL 数据库，获取即时动态的数据。"/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://zhengxixuan.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://zhengxixuan.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-106973310-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Posts</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://zhengxixuan.github.io/posts/2020-07-30-marketing-data-analysis/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://zhengxixuan.github.io/about/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f&text=%e6%90%ad%e5%bb%ba%e4%bc%81%e4%b8%9a%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f&title=%e6%90%ad%e5%bb%ba%e4%bc%81%e4%b8%9a%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f&is_video=false&description=%e6%90%ad%e5%bb%ba%e4%bc%81%e4%b8%9a%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=%e6%90%ad%e5%bb%ba%e4%bc%81%e4%b8%9a%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf&body=Check out this article: https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f&title=%e6%90%ad%e5%bb%ba%e4%bc%81%e4%b8%9a%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f&title=%e6%90%ad%e5%bb%ba%e4%bc%81%e4%b8%9a%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f&title=%e6%90%ad%e5%bb%ba%e4%bc%81%e4%b8%9a%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f&title=%e6%90%ad%e5%bb%ba%e4%bc%81%e4%b8%9a%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f&name=%e6%90%ad%e5%bb%ba%e4%bc%81%e4%b8%9a%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf&description=1.%20%e9%a1%b9%e7%9b%ae%e9%9c%80%e6%b1%82%20%e8%83%8c%e6%99%af%ef%bc%9a%e8%bf%90%e8%90%a5%e5%9b%a2%e9%98%9f%e4%b8%bb%e8%a6%81%e8%b4%9f%e8%b4%a3%e6%b5%81%e9%87%8f%e8%bf%90%e8%90%a5%ef%bc%88%e7%bd%91%e7%ab%99%e5%92%8cAPP%ef%bc%89%e3%80%81%e7%94%a8%e6%88%b7%e8%bf%90%e8%90%a5%e3%80%81%e8%90%a5%e9%94%80%e6%b4%bb%e5%8a%a8%e8%bf%90%e8%90%a5%e4%bb%a5%e5%8f%8a%e5%86%85%e5%ae%b9%e8%bf%90%e8%90%a5%e7%ad%89%e6%96%b9%e9%9d%a2%e7%9a%84%e5%b7%a5%e4%bd%9c%ef%bc%8c%e4%bb%96%e4%bb%ac%e6%af%8f%e5%a4%a9%e9%83%bd%e4%bc%9a%e6%b2%89%e6%b7%80%e4%b8%80%e4%ba%9b%e8%bf%90%e8%90%a5%e6%95%b0%e6%8d%ae%e3%80%82%0a%e9%9c%80%e6%b1%82%ef%bc%9a%e6%90%ad%e5%bb%ba%e4%b8%80%e4%b8%aa%e8%bf%90%e8%90%a5%e6%95%b0%e6%8d%ae%e5%88%86%e6%9e%90%e7%9a%84%e7%9c%8b%e6%9d%bf%ef%bc%8c%e5%b0%86%e8%bf%90%e8%90%a5%e6%95%b0%e6%8d%ae%e9%80%9a%e8%bf%87%e5%9b%be%e8%a1%a8%e7%9a%84%e6%96%b9%e5%bc%8f%e5%b1%95%e7%8e%b0%e5%87%ba%e6%9d%a5%ef%bc%8c%e8%ae%a9%e9%83%a8%e9%97%a8%e5%90%8c%e4%ba%8b%e5%8f%af%e4%bb%a5%e5%bf%ab%e9%80%9f%e4%ba%86%e8%a7%a3%e5%88%b0%e5%85%b3%e9%94%ae%e7%9a%84%e8%bf%90%e8%90%a5%e6%8c%87%e6%a0%87%e5%92%8c%e5%8d%b3%e6%97%b6%e7%9a%84%e9%87%8d%e8%a6%81%e5%8f%98%e5%8c%96%e8%b6%8b%e5%8a%bf%e3%80%82%0a2.%20%e6%b5%81%e9%87%8f%e5%88%86%e6%9e%90%20%e7%bd%91%e7%ab%99%e6%b5%81%e9%87%8f%e6%8c%87%e6%a0%87%e7%9b%98%ef%bc%9a%e5%8c%85%e5%90%ab%20PV%e3%80%81UV%e3%80%81%e6%80%bb%e8%ae%bf%e9%97%ae%e9%87%8f%e3%80%81%e5%b9%b3%e5%9d%87%e5%81%9c%e7%95%99%e6%97%b6%e9%97%b4%e3%80%81%e5%8d%95%e6%ac%a1%e4%bc%9a%e8%af%9d%e6%b5%8f%e8%a7%88%e9%a1%b5%e6%95%b0%e3%80%81%e9%a6%96%e9%a1%b5%e8%b7%b3%e5%87%ba%e7%8e%87%e7%ad%89%e7%ad%89%e3%80%82%0aAPP%20%e6%b5%81%e9%87%8f%e6%8c%87%e6%a0%87%ef%bc%9a%e5%8c%85%e5%90%ab%e6%af%8f%e6%97%a5%e5%90%af%e5%8a%a8%e6%ac%a1%e6%95%b0%e3%80%81%e6%97%a5%e6%b4%bb%e3%80%81%e6%97%a5%e6%96%b0%e3%80%81%e6%9c%88%e6%b4%bb%e7%ad%89%e7%ad%89%e3%80%82%0a%e5%a4%9a%e7%bb%b4%e6%b5%81%e9%87%8f%e5%88%86%e6%9e%90%ef%bc%9a%e5%8c%85%e6%8b%ac%e8%ae%bf%e9%97%ae%e6%9d%a5%e6%ba%90%e3%80%81%e7%bb%88%e7%ab%af%e7%b1%bb%e5%9e%8b%e3%80%81%e5%8c%ba%e5%9f%9f%e6%9d%a5%e6%ba%90%e7%ad%89%e7%ad%89%e3%80%82%0a3.%20%e7%94%a8%e6%88%b7%e5%88%86%e6%9e%90%203.1%20%e7%94%a8%e6%88%b7%e8%bf%90%e8%90%a5%e5%88%86%e6%9e%90%20%e7%94%a8%e6%88%b7%e8%bf%90%e8%90%a5%ef%bc%9a%e6%97%a5%e6%b4%bb%e8%b7%83%e7%94%a8%e6%88%b7%e3%80%81%e6%97%a5%e6%96%b0%e5%a2%9e%e7%94%a8%e6%88%b7%e3%80%81%e6%97%a5%e6%b5%81%e5%a4%b1%e7%94%a8%e6%88%b7%e3%80%81%e6%96%b0%e5%a2%9e-%e6%b5%81%e5%a4%b1%e8%b6%8b%e5%8a%bf%e5%af%b9%e6%af%94%e3%80%82%0a3.2%20%e7%94%a8%e6%88%b7%e6%9e%84%e6%88%90%e5%88%86%e6%9e%90%20%e7%94%a8%e6%88%b7%e5%9f%ba%e6%9c%ac%e5%b1%9e%e6%80%a7%ef%bc%9a%e6%80%a7%e5%88%ab%e3%80%81%e5%b9%b4%e9%be%84%e3%80%81%e8%81%8c%e4%b8%9a%e3%80%81%e5%9c%b0%e5%8c%ba%e3%80%81%e4%bd%bf%e7%94%a8%e9%a2%91%e6%ac%a1%e7%ad%89%e7%ad%89%e3%80%82%0a4.%20%e8%90%a5%e9%94%80%e5%88%86%e6%9e%90%20%e8%90%a5%e9%94%80%e5%88%86%e6%9e%90%e5%8f%af%e4%bb%a5%e6%8c%89%e7%85%a7%e6%80%bb-%e5%88%86%e7%bb%93%e6%9e%84%e5%b1%95%e5%bc%80%ef%bc%8c%e5%85%88%e7%9c%8b%e6%80%bb%e9%94%80%e5%94%ae%e6%83%85%e5%86%b5%ef%bc%8c%e5%86%8d%e7%bb%86%e5%88%86%e8%87%b3%e4%b8%bb%e8%a6%81%e4%b8%9a%e5%8a%a1%e3%80%81%e4%b8%bb%e8%a6%81%e4%ba%a7%e5%93%81%e3%80%82%0a5.%20%e5%86%85%e5%ae%b9%e5%88%86%e6%9e%90%20%e5%86%85%e5%ae%b9%e5%88%86%e6%9e%90%e4%b8%ad%e5%b8%b8%e7%94%a8%e7%9a%84%e6%98%af%e8%af%8d%e9%a2%91%e7%bb%9f%e8%ae%a1%ef%bc%8c%e4%bb%8e%e6%90%9c%e7%b4%a2%e5%85%b3%e9%94%ae%e8%af%8d%e4%b8%ad%e5%8f%91%e7%8e%b0%e5%81%8f%e5%a5%bd%e3%80%82%0a%e5%b0%8f%e7%bb%93%20%e6%9c%ac%e6%ac%a1%e4%bd%bf%e7%94%a8%e9%98%bf%e9%87%8c%e4%ba%91%e7%9a%84%20Quick%20BI%20%e6%95%b0%e6%8d%ae%e5%8f%af%e8%a7%86%e5%8c%96%e5%88%86%e6%9e%90%e5%b9%b3%e5%8f%b0%ef%bc%8c%e5%af%bc%e5%85%a5%20csv%20%e6%96%87%e4%bb%b6%ef%bc%8c%e6%90%ad%e5%bb%ba%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf%e3%80%82%e6%95%b0%e6%8d%ae%e6%ba%90%e6%98%af%e5%9b%ba%e5%ae%9a%e7%9a%84%ef%bc%8c%e5%9b%a0%e6%ad%a4%e4%b9%9f%e6%97%a0%e6%b3%95%e5%b1%95%e7%a4%ba%e5%ae%9e%e6%97%b6%e6%95%b0%e6%8d%ae%ef%bc%8c%e5%90%8e%e7%bb%ad%e5%8f%af%e5%b0%9d%e8%af%95%e7%9b%b4%e8%bf%9e%20SQL%20%e6%95%b0%e6%8d%ae%e5%ba%93%ef%bc%8c%e8%8e%b7%e5%8f%96%e5%8d%b3%e6%97%b6%e5%8a%a8%e6%80%81%e7%9a%84%e6%95%b0%e6%8d%ae%e3%80%82">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f&t=%e6%90%ad%e5%bb%ba%e4%bc%81%e4%b8%9a%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-项目需求">1. 项目需求</a></li>
+    <li><a href="#2-流量分析">2. 流量分析</a></li>
+    <li><a href="#3-用户分析">3. 用户分析</a>
+      <ul>
+        <li><a href="#31-用户运营分析">3.1 用户运营分析</a></li>
+        <li><a href="#32-用户构成分析">3.2 用户构成分析</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-营销分析">4. 营销分析</a></li>
+    <li><a href="#5-内容分析">5. 内容分析</a></li>
+    <li><a href="#小结">小结</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        搭建企业经营分析看板
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2020-08-02 20:42:00 &#43;0000 UTC" itemprop="datePublished">2020-08-02</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/%E6%8C%87%E6%A0%87%E5%BA%93" rel="tag">指标库</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90" rel="tag">数据分析</a>
+            
+        </div>
+        
+      </div>
+    </header>
+
+  
+    <div class="content" itemprop="articleBody">
+      <h2 id="1-项目需求">1. 项目需求</h2>
+<p>背景：运营团队主要负责流量运营（网站和APP）、用户运营、营销活动运营以及内容运营等方面的工作，他们每天都会沉淀一些运营数据。</p>
+<p>需求：搭建一个运营数据分析的看板，将运营数据通过图表的方式展现出来，让部门同事可以快速了解到关键的运营指标和即时的重要变化趋势。</p>
+<h2 id="2-流量分析">2. 流量分析</h2>
+<p>网站流量指标盘：包含 PV、UV、总访问量、平均停留时间、单次会话浏览页数、首页跳出率等等。</p>
+<p><img src="http://xixuan.img-cn-shanghai.aliyuncs.com/note/2020-08-05-040303.png" alt="截屏2020-08-05 11.56.02"></p>
+<p>APP 流量指标：包含每日启动次数、日活、日新、月活等等。</p>
+<p><img src="http://xixuan.img-cn-shanghai.aliyuncs.com/note/2020-08-05-040255.png" alt="截屏2020-08-05 11.56.19"></p>
+<p>多维流量分析：包括访问来源、终端类型、区域来源等等。</p>
+<p><img src="http://xixuan.img-cn-shanghai.aliyuncs.com/note/2020-08-05-040247.png" alt="截屏2020-08-05 11.56.38"></p>
+<h2 id="3-用户分析">3. 用户分析</h2>
+<h3 id="31-用户运营分析">3.1 用户运营分析</h3>
+<p>用户运营：日活跃用户、日新增用户、日流失用户、新增-流失趋势对比。</p>
+<p><img src="http://xixuan.img-cn-shanghai.aliyuncs.com/note/2020-08-05-040237.png" alt="截屏2020-08-05 11.56.52"></p>
+<h3 id="32-用户构成分析">3.2 用户构成分析</h3>
+<p>用户基本属性：性别、年龄、职业、地区、使用频次等等。</p>
+<p><img src="http://xixuan.img-cn-shanghai.aliyuncs.com/note/2020-08-05-040218.png" alt="截屏2020-08-05 11.57.03"></p>
+<h2 id="4-营销分析">4. 营销分析</h2>
+<p>营销分析可以按照总-分结构展开，先看总销售情况，再细分至主要业务、主要产品。</p>
+<p><img src="http://xixuan.img-cn-shanghai.aliyuncs.com/note/2020-08-05-040159.png" alt="截屏2020-08-05 12.00.29"></p>
+<h2 id="5-内容分析">5. 内容分析</h2>
+<p>内容分析中常用的是词频统计，从搜索关键词中发现偏好。</p>
+<p><img src="http://xixuan.img-cn-shanghai.aliyuncs.com/note/2020-08-05-040147.png" alt="截屏2020-08-05 11.57.50"></p>
+<h2 id="小结">小结</h2>
+<p>本次使用阿里云的 Quick BI 数据可视化分析平台，导入 csv 文件，搭建经营分析看板。数据源是固定的，因此也无法展示实时数据，后续可尝试直连 SQL 数据库，获取即时动态的数据。</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+  
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+          <script type="text/javascript">
+          
+          (function() {
+              
+              
+              
+              
+          
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              var disqus_shortname = 'zhengxixuan';
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+    </div>
+
+  
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/posts">Posts</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="/about">About</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-项目需求">1. 项目需求</a></li>
+    <li><a href="#2-流量分析">2. 流量分析</a></li>
+    <li><a href="#3-用户分析">3. 用户分析</a>
+      <ul>
+        <li><a href="#31-用户运营分析">3.1 用户运营分析</a></li>
+        <li><a href="#32-用户构成分析">3.2 用户构成分析</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-营销分析">4. 营销分析</a></li>
+    <li><a href="#5-内容分析">5. 内容分析</a></li>
+    <li><a href="#小结">小结</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f&text=%e6%90%ad%e5%bb%ba%e4%bc%81%e4%b8%9a%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f&title=%e6%90%ad%e5%bb%ba%e4%bc%81%e4%b8%9a%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f&is_video=false&description=%e6%90%ad%e5%bb%ba%e4%bc%81%e4%b8%9a%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=%e6%90%ad%e5%bb%ba%e4%bc%81%e4%b8%9a%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf&body=Check out this article: https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f&title=%e6%90%ad%e5%bb%ba%e4%bc%81%e4%b8%9a%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f&title=%e6%90%ad%e5%bb%ba%e4%bc%81%e4%b8%9a%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f&title=%e6%90%ad%e5%bb%ba%e4%bc%81%e4%b8%9a%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f&title=%e6%90%ad%e5%bb%ba%e4%bc%81%e4%b8%9a%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f&name=%e6%90%ad%e5%bb%ba%e4%bc%81%e4%b8%9a%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf&description=1.%20%e9%a1%b9%e7%9b%ae%e9%9c%80%e6%b1%82%20%e8%83%8c%e6%99%af%ef%bc%9a%e8%bf%90%e8%90%a5%e5%9b%a2%e9%98%9f%e4%b8%bb%e8%a6%81%e8%b4%9f%e8%b4%a3%e6%b5%81%e9%87%8f%e8%bf%90%e8%90%a5%ef%bc%88%e7%bd%91%e7%ab%99%e5%92%8cAPP%ef%bc%89%e3%80%81%e7%94%a8%e6%88%b7%e8%bf%90%e8%90%a5%e3%80%81%e8%90%a5%e9%94%80%e6%b4%bb%e5%8a%a8%e8%bf%90%e8%90%a5%e4%bb%a5%e5%8f%8a%e5%86%85%e5%ae%b9%e8%bf%90%e8%90%a5%e7%ad%89%e6%96%b9%e9%9d%a2%e7%9a%84%e5%b7%a5%e4%bd%9c%ef%bc%8c%e4%bb%96%e4%bb%ac%e6%af%8f%e5%a4%a9%e9%83%bd%e4%bc%9a%e6%b2%89%e6%b7%80%e4%b8%80%e4%ba%9b%e8%bf%90%e8%90%a5%e6%95%b0%e6%8d%ae%e3%80%82%0a%e9%9c%80%e6%b1%82%ef%bc%9a%e6%90%ad%e5%bb%ba%e4%b8%80%e4%b8%aa%e8%bf%90%e8%90%a5%e6%95%b0%e6%8d%ae%e5%88%86%e6%9e%90%e7%9a%84%e7%9c%8b%e6%9d%bf%ef%bc%8c%e5%b0%86%e8%bf%90%e8%90%a5%e6%95%b0%e6%8d%ae%e9%80%9a%e8%bf%87%e5%9b%be%e8%a1%a8%e7%9a%84%e6%96%b9%e5%bc%8f%e5%b1%95%e7%8e%b0%e5%87%ba%e6%9d%a5%ef%bc%8c%e8%ae%a9%e9%83%a8%e9%97%a8%e5%90%8c%e4%ba%8b%e5%8f%af%e4%bb%a5%e5%bf%ab%e9%80%9f%e4%ba%86%e8%a7%a3%e5%88%b0%e5%85%b3%e9%94%ae%e7%9a%84%e8%bf%90%e8%90%a5%e6%8c%87%e6%a0%87%e5%92%8c%e5%8d%b3%e6%97%b6%e7%9a%84%e9%87%8d%e8%a6%81%e5%8f%98%e5%8c%96%e8%b6%8b%e5%8a%bf%e3%80%82%0a2.%20%e6%b5%81%e9%87%8f%e5%88%86%e6%9e%90%20%e7%bd%91%e7%ab%99%e6%b5%81%e9%87%8f%e6%8c%87%e6%a0%87%e7%9b%98%ef%bc%9a%e5%8c%85%e5%90%ab%20PV%e3%80%81UV%e3%80%81%e6%80%bb%e8%ae%bf%e9%97%ae%e9%87%8f%e3%80%81%e5%b9%b3%e5%9d%87%e5%81%9c%e7%95%99%e6%97%b6%e9%97%b4%e3%80%81%e5%8d%95%e6%ac%a1%e4%bc%9a%e8%af%9d%e6%b5%8f%e8%a7%88%e9%a1%b5%e6%95%b0%e3%80%81%e9%a6%96%e9%a1%b5%e8%b7%b3%e5%87%ba%e7%8e%87%e7%ad%89%e7%ad%89%e3%80%82%0aAPP%20%e6%b5%81%e9%87%8f%e6%8c%87%e6%a0%87%ef%bc%9a%e5%8c%85%e5%90%ab%e6%af%8f%e6%97%a5%e5%90%af%e5%8a%a8%e6%ac%a1%e6%95%b0%e3%80%81%e6%97%a5%e6%b4%bb%e3%80%81%e6%97%a5%e6%96%b0%e3%80%81%e6%9c%88%e6%b4%bb%e7%ad%89%e7%ad%89%e3%80%82%0a%e5%a4%9a%e7%bb%b4%e6%b5%81%e9%87%8f%e5%88%86%e6%9e%90%ef%bc%9a%e5%8c%85%e6%8b%ac%e8%ae%bf%e9%97%ae%e6%9d%a5%e6%ba%90%e3%80%81%e7%bb%88%e7%ab%af%e7%b1%bb%e5%9e%8b%e3%80%81%e5%8c%ba%e5%9f%9f%e6%9d%a5%e6%ba%90%e7%ad%89%e7%ad%89%e3%80%82%0a3.%20%e7%94%a8%e6%88%b7%e5%88%86%e6%9e%90%203.1%20%e7%94%a8%e6%88%b7%e8%bf%90%e8%90%a5%e5%88%86%e6%9e%90%20%e7%94%a8%e6%88%b7%e8%bf%90%e8%90%a5%ef%bc%9a%e6%97%a5%e6%b4%bb%e8%b7%83%e7%94%a8%e6%88%b7%e3%80%81%e6%97%a5%e6%96%b0%e5%a2%9e%e7%94%a8%e6%88%b7%e3%80%81%e6%97%a5%e6%b5%81%e5%a4%b1%e7%94%a8%e6%88%b7%e3%80%81%e6%96%b0%e5%a2%9e-%e6%b5%81%e5%a4%b1%e8%b6%8b%e5%8a%bf%e5%af%b9%e6%af%94%e3%80%82%0a3.2%20%e7%94%a8%e6%88%b7%e6%9e%84%e6%88%90%e5%88%86%e6%9e%90%20%e7%94%a8%e6%88%b7%e5%9f%ba%e6%9c%ac%e5%b1%9e%e6%80%a7%ef%bc%9a%e6%80%a7%e5%88%ab%e3%80%81%e5%b9%b4%e9%be%84%e3%80%81%e8%81%8c%e4%b8%9a%e3%80%81%e5%9c%b0%e5%8c%ba%e3%80%81%e4%bd%bf%e7%94%a8%e9%a2%91%e6%ac%a1%e7%ad%89%e7%ad%89%e3%80%82%0a4.%20%e8%90%a5%e9%94%80%e5%88%86%e6%9e%90%20%e8%90%a5%e9%94%80%e5%88%86%e6%9e%90%e5%8f%af%e4%bb%a5%e6%8c%89%e7%85%a7%e6%80%bb-%e5%88%86%e7%bb%93%e6%9e%84%e5%b1%95%e5%bc%80%ef%bc%8c%e5%85%88%e7%9c%8b%e6%80%bb%e9%94%80%e5%94%ae%e6%83%85%e5%86%b5%ef%bc%8c%e5%86%8d%e7%bb%86%e5%88%86%e8%87%b3%e4%b8%bb%e8%a6%81%e4%b8%9a%e5%8a%a1%e3%80%81%e4%b8%bb%e8%a6%81%e4%ba%a7%e5%93%81%e3%80%82%0a5.%20%e5%86%85%e5%ae%b9%e5%88%86%e6%9e%90%20%e5%86%85%e5%ae%b9%e5%88%86%e6%9e%90%e4%b8%ad%e5%b8%b8%e7%94%a8%e7%9a%84%e6%98%af%e8%af%8d%e9%a2%91%e7%bb%9f%e8%ae%a1%ef%bc%8c%e4%bb%8e%e6%90%9c%e7%b4%a2%e5%85%b3%e9%94%ae%e8%af%8d%e4%b8%ad%e5%8f%91%e7%8e%b0%e5%81%8f%e5%a5%bd%e3%80%82%0a%e5%b0%8f%e7%bb%93%20%e6%9c%ac%e6%ac%a1%e4%bd%bf%e7%94%a8%e9%98%bf%e9%87%8c%e4%ba%91%e7%9a%84%20Quick%20BI%20%e6%95%b0%e6%8d%ae%e5%8f%af%e8%a7%86%e5%8c%96%e5%88%86%e6%9e%90%e5%b9%b3%e5%8f%b0%ef%bc%8c%e5%af%bc%e5%85%a5%20csv%20%e6%96%87%e4%bb%b6%ef%bc%8c%e6%90%ad%e5%bb%ba%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf%e3%80%82%e6%95%b0%e6%8d%ae%e6%ba%90%e6%98%af%e5%9b%ba%e5%ae%9a%e7%9a%84%ef%bc%8c%e5%9b%a0%e6%ad%a4%e4%b9%9f%e6%97%a0%e6%b3%95%e5%b1%95%e7%a4%ba%e5%ae%9e%e6%97%b6%e6%95%b0%e6%8d%ae%ef%bc%8c%e5%90%8e%e7%bb%ad%e5%8f%af%e5%b0%9d%e8%af%95%e7%9b%b4%e8%bf%9e%20SQL%20%e6%95%b0%e6%8d%ae%e5%ba%93%ef%bc%8c%e8%8e%b7%e5%8f%96%e5%8d%b3%e6%97%b6%e5%8a%a8%e6%80%81%e7%9a%84%e6%95%b0%e6%8d%ae%e3%80%82">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fzhengxixuan.github.io%2fposts%2f2020-08-02-company-dashbord%2f&t=%e6%90%ad%e5%bb%ba%e4%bc%81%e4%b8%9a%e7%bb%8f%e8%90%a5%e5%88%86%e6%9e%90%e7%9c%8b%e6%9d%bf">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  郑嘻嘻 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Posts</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

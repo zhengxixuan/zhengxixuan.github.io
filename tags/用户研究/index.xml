@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>用户研究 on 我以文字敬时光</title>
+    <link>https://zhengxixuan.github.io/tags/%E7%94%A8%E6%88%B7%E7%A0%94%E7%A9%B6/</link>
+    <description>Recent content in 用户研究 on 我以文字敬时光</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>郑嘻嘻</copyright>
+    <lastBuildDate>Thu, 30 Jul 2020 20:42:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhengxixuan.github.io/tags/%E7%94%A8%E6%88%B7%E7%A0%94%E7%A9%B6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>数据分析视角的营销方案设计与评估</title>
+      <link>https://zhengxixuan.github.io/posts/2020-07-30-marketing-data-analysis/</link>
+      <pubDate>Thu, 30 Jul 2020 20:42:00 +0000</pubDate>
+      
+      <guid>https://zhengxixuan.github.io/posts/2020-07-30-marketing-data-analysis/</guid>
+      <description>1. 项目需求 目标： 利用促销推广活动，提升某电商平台中数码类产品的销售额。
+具体方案： 对已有用户分群，进行精准活动推广，从而在最大程度上实现 用户的活跃召回 ，并推动购买行为的完成，最终达到 提升活动交易额 的目标 。
+2. 指标量化 指标体系是分析师的指南针。将业务需求量化，建立恰当的指标体系，可以为后续的数据采集工作、具体场景分析提供指引。
+根据此次项目需求，从活跃度、精准度、贡献度三方面来衡量活动效果。
+3. 数据采集 我们需要两个角度的数据：用户属性和事件属性。
+ 用户属性：即用户基本信息，比如性别、年龄、注册时间、渠道来源等等。 事件属性：即用户进行的各项操作，比如注册、登录、浏览、下单、支付等等。  而活动分析需要在日常的操作中，嵌入某项活动，之后观察数据的变化。
+数据采集的整体思路：
+  根据业务流程、用户的关键行为设计事件
+  为事件添加相关属性，并明确事件的触发点
+  检查需求，完善事件设计
+  最终形成一张给工程师的 埋点设计需求表 ：
+4. 方案实施 4.1 基于促销活动的用户分群
+针对数码商品，有两大类活动，一是满减活动，二是特定类型数码产品折扣促销。由此，确定目标用户群：
+  满减活动营销用户群：最近三个月浏览过任意满减商品，且购买次数大于等于1次
+  手机数码促销用户群：最近一年买过数码产品，且购买次数大于等于3次
+  4.2 根据用户群活跃时间，确定不同分组的的营销推送时间
+分别查看不同用户群的活跃时间，在高峰期前发布推送。通常来讲，每天的下单高峰期在午休和晚上。
+5. 效果评估 常用的分析模型如下图，图源自神策数据平台。
+事件分析，通过对基础数据进行筛选、分组和聚合，展现变化趋势、多维度对比效果，容易发现细分的关键问题点。
+漏斗模型是一个覆盖业务全流程的模型，涉及用户的登录、浏览、下单、支付各环节的转化率与流失率，再结合其他模型，对每个环节进一步拆解分析。
+在进行活动效果评估时，注意谨慎选择数据的参考基准，依据第二步构建的指标体系，逐个指标分析，评估营销效果，提出优化建议。
+最后，复盘整个活动并沉淀经验。</description>
+    </item>
+    
+  </channel>
+</rss>

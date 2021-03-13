@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>书单 on 我以文字敬时光</title>
+    <link>https://zhengxixuan.github.io/tags/%E4%B9%A6%E5%8D%95/</link>
+    <description>Recent content in 书单 on 我以文字敬时光</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>郑嘻嘻</copyright>
+    <lastBuildDate>Sat, 18 Jan 2020 20:42:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhengxixuan.github.io/tags/%E4%B9%A6%E5%8D%95/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>20 本软件开发人员必读书籍</title>
+      <link>https://zhengxixuan.github.io/posts/2020-01-18-trans-20-most-recommended-books-for-software-developers/</link>
+      <pubDate>Sat, 18 Jan 2020 20:42:00 +0000</pubDate>
+      
+      <guid>https://zhengxixuan.github.io/posts/2020-01-18-trans-20-most-recommended-books-for-software-developers/</guid>
+      <description>原文链接： https://dev.to/awwsmm/20-most-recommended-books-for-software-developers-5578
+译者：郑嘻嘻
+ 人们常常犯错。例如下错赌注，在房地产泡沫即将破裂前购买房产，持续着不健康的饮食。有时因为听从了别人的建议，导致我们做出错误的决定。
+尽管如此，那些有着不同生活经历的人们，给我们提出的建议，或许是一笔宝贵的财富。 如果有人花时间读完整本书并强烈推荐它，也许我们应该听一听。如果有 100 个人读完整本书，并且推荐它，那一定值得我们读读。遵循这个逻辑，我建立了一个元清单：在统计了各个书籍推荐清单后，整理出最常被推荐的书籍。
+我整理了数十位程序员、经理、职业教练以及其他行业专家的推荐资源，形成这份元清单——最受推荐的 20 本软件开发人员必读书籍 。这个列表的所有数据源都可以在 我的GitHub仓库 中免费获取。 截至 2019 年 10 月 19 日，我的元清单引用了 36 份资源，总共涵盖 297 本书籍的推荐。
+我做这件事，主要是为了整理以后自己要读的书，同时也是为了帮助一些人，他们往往想要获得好的推荐，却常常迷失在各种不同推荐清单中。**如果我们能根据所有人的建议统计出一份推荐清单，为什么还要依赖某个人的建议呢？**另外，感谢互联网提供丰富的资源。
+以下是我编写这份清单的经验法则：
+ 寻找尽可能多的推荐资源，但是那些请求推荐的文章不包括在内。 一本书的推荐次数，涵盖了不同版本的推荐，但是不会重复计算同一篇文章推荐多个版本。 引用资源必须是作者认真写的书籍推荐文章，不包括那些作者仅仅简单地罗列已读或在读书目的文章。 引用资源推荐的书籍是针对特定级别的开发人员（例如 CTO、初级开发人员、新手）。 我尽量避免引用包含一些特定技术（比如 PHP、 CSS、 Java）的资源，但是仍旧无法避免一些引用资源中夹杂着这些类型的书。 本清单适用于“软件开发人员”、“软件工程师”、“开发人员”、“程序员”和“编码员”，尽管他们各自有着一些细微区别。  据我所知，这是互联网上最完整的软件开发书籍推荐元清单。 如果你找到了一个软件开发的书籍推荐清单，这个清单没有包含在我的 GitHub 电子表格中，请告诉我。 如果它符合我上面列出的标准，我很乐意将它添加到列表中。
+不说废话，元清单推荐的 20 本书籍如下：
+  排名 20：Patterns of Enterprise Application Architecture by Martin Fowler
+ 中文版：《企业应用架构模式》 推荐指数：13%    排名 19： Clean Architecture: A Craftsman&amp;rsquo;s Guide to Software Structure and Design by Robert C.</description>
+    </item>
+    
+  </channel>
+</rss>
