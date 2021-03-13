@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>网络 on 我以文字敬时光</title>
+    <link>https://zhengxixuan.github.io/tags/%E7%BD%91%E7%BB%9C/</link>
+    <description>Recent content in 网络 on 我以文字敬时光</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>郑嘻嘻</copyright>
+    <lastBuildDate>Sun, 26 Jul 2020 20:42:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhengxixuan.github.io/tags/%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>日翻一书 - 网络科学</title>
+      <link>https://zhengxixuan.github.io/posts/2020-07-26-week02-books/</link>
+      <pubDate>Sun, 26 Jul 2020 20:42:00 +0000</pubDate>
+      
+      <guid>https://zhengxixuan.github.io/posts/2020-07-26-week02-books/</guid>
+      <description>日翻一书 200720-200726
+200720 《隐秩序：适应性造就复杂性》
+① 原作名: Hidden order: How adaptation builds complexity
+② 出版时间：原版：1995年，中文版：2011年 8 月
+③ 作者简介：约翰·H.霍兰(John Henry Holland, 1929-2015)
+遗传算法(此领域的研究有可能借助计算机研制出柔性智能)的发明人，“回声模型”创始人，复杂性科学研究的先驱。他是密歇根大学计算机科学与电子工程教授兼心理学教授，著名的麦克阿瑟研究奖获得者，圣菲研究所指导委员会主席之一；有《自然系统和人工系统中的适应》、《涌现性》等书。
+维基百科：https://en.wikipedia.org/wiki/John_Henry_Holland
+④ 豆瓣链接：https://book.douban.com/subject/6797698/
+⑤ 翻书杂记：
+侯世达对本书的评价：
+“《隐秩序》是一部里程碑式杰作，是霍兰几十年关于主体系统如何演化、适应、凝聚、竞争、合作，以及与此同时如何创造极大的多样性和新颖性等深刻思想的完美浓缩。所涉原理书目很少、很一般，但极其优美。霍兰杰出而活跃的心智从经济学跳跃到免疫学，再到生态学、神经病学和博弈论，然后再返回来。这些强有力洞见的大师般综合为研究复杂性如何涌现和适应设定了一个路标，所有试图理解现在称作“复杂性”之大综合的人们，将长期把它作为指路灯塔。”
+内容简介：
+像艾滋病这样的疾病为何能够摧毁免疫系统？像纽约、东京这样的大城市，如何能够不间断地保障食品、医疗、服饰和数百万种居民必需品的供给7？这类高度复杂系统的运作仍然是一个谜。但是通过霍兰及其同事在圣菲研究所和密歇根大学的工作，现在已经接近找到一种解答。
+作为遗传算法之父和复杂性科学的先驱之一，，霍兰从一开始就处于复杂适应系统（CAS）这一新兴研究领域的中心。书中提供了一个适用于全部 CAS 的计算机模型。霍兰通过描述我们能够做什么，总结了如何增强对 CAS 的理论认识。他提出的若干理论方法，可以指导人们对付耗尽资源、置我们世界于危险境地的棘手的 CAS 问题。
+200721 《结构洞：竞争的社会结构》
+① 原作名: Structural Holes: Social Structure of Competition
+② 出版时间：原版：1992 年，中文版：2017 年 4 月
+③ 作者简介：罗纳德·伯特(Ronald Stuart Burt，1949- )
+美国社会学家，芝加哥大学商学院社会学和战略学教授。他最著名的研究是有关社会网络和社会资本，特别是社会网络结构洞的概念。著有《结构洞：竞争的社会结构》、《券商和倒闭：社会资本导论》等书。
+维基百科：https://en.wikipedia.org/wiki/Ronald_Stuart_Burt
+④ 豆瓣链接：https://book.douban.com/subject/26933955/
+⑤ 翻书杂记：
+结构洞理论是罗纳德·伯特结合奥地利学派和格兰诺维特的网络分析于1992年提出的。伯特认为，在社会网络中，某些个体之间存在无直接联系或关系间断的现象，从网络整体来看，好像网络结构中出现了洞穴，这就是结构洞。而将无直接联系的两者连接起来的第三者拥有信息优势和控制优势，因此，组织和组织中的个人都要争取占据结构洞中的第三者位置。
+摘录部分：
+“结构洞，就是指竞争场中玩家之间无联结或者非等位的情形。结构洞是与信息通路、先机、举荐以及控制等相应的企业家机会联系在一起的。”
+“结构洞理论有四个标志性特征：第一，竞争是一个关系问题，并非玩家自身之间的竞争；第二，竞争是一种突现的关系，是不可见的；第三，竞争是一个过程，而非结果；第四，不完全竞争是一个自由的问题，而不仅仅是权力的问题。这四个特征并不各自独立于结构洞理论，而是相互联系的。”
+“第一章中呈现的观点解释了在社会结构中拥有丰富结构洞的玩家们——那些利用网络为其提供高结构自主性的网络玩家——享受着较高的投资回报率。这些玩家知道且参与更多的回报机会，并在其中施加影响。是否占据竞争优势就是一个是否拥有结构洞的问题。”</description>
+    </item>
+    
+  </channel>
+</rss>

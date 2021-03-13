@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>复盘 on 我以文字敬时光</title>
+    <link>https://zhengxixuan.github.io/tags/%E5%A4%8D%E7%9B%98/</link>
+    <description>Recent content in 复盘 on 我以文字敬时光</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>郑嘻嘻</copyright>
+    <lastBuildDate>Fri, 01 Jan 2021 20:42:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhengxixuan.github.io/tags/%E5%A4%8D%E7%9B%98/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>搭建新的工作流</title>
+      <link>https://zhengxixuan.github.io/posts/2021-01-01-new-workflow/</link>
+      <pubDate>Fri, 01 Jan 2021 20:42:00 +0000</pubDate>
+      
+      <guid>https://zhengxixuan.github.io/posts/2021-01-01-new-workflow/</guid>
+      <description>2020这一年，时间过得很慢，又很快。写完5000多字的年终总结，看着一堆统计图表，似乎干了不少活。最清晰地感受自己变化的时刻，是打开 DayOne，阅读「那年今日」的我：去年，临时赴约跨年酒局，边喝精酿边想关键词；前年，去上海参加线下活动，聊得太欢乐，差点错过回杭的高铁。
+想起小时候，语文老师要求暑假写30篇日记，通常是绞尽脑汁在开学前一周补完。现在，写日记成了一种习惯。不止它，我还养成了时间记录、每天用牙线、睡前拉伸的习惯。
+记录、复盘的目的，不是展示结果，而是督促执行。 人性本懒，我们可以借用好工具，帮助自己。
+每天面对巨量信息、数据、知识，注意力已经不够用了。我想要建立起一套工作流，来帮助自己去选择和有效积累。
+我进行了一些尝试，得出了不同答案。使用 aTimeLogger 记录了时间开销688天，决定放弃。在 DayOne 写日记1525条，依然很香。两年前尝试使用 Notion 作为记录一切的知识库，没成功运转。这些行为背后隐藏着的是对事物的认知。
+搭建工作流，是一种利用效率工具，设计合理的、认知负荷小、容易达成的路径，以此降低执行难度的方法。本质上，是在为自己设计一个个「场」，包含线索、触发器。
+新的工作流有两个关键点：
+ 从时间管理转变为心流管理 区分数据存储器和数据处理器  事无巨细地记录时间花费很累，很可能出现不允许漏记一分钟的强迫症。比如，回顾睡眠时常并没有太多意义，睡眠记录的关键是希望每一天都睡得更好。心流管理，是管理专注的时间，提升效率和行动力。番茄工作法就是一种心流管理，我理解的番茄工作法是：帮助你专注地去做事，做那些真正想做、需要做的事情。
+寄希望于用单个产品来满足个人管理需求，是不可能的。知识管理的存储和处理，需要不同特性的产品。项目管理、日常管理所需的产品也不同。幸运的是，市面上不乏优质的 APP，也不乏优秀的 APP 开发者。
+2021年的新工作流：
+ 潮汐：记录睡眠和小憩时间，最大优点是丰富的助眠声音场景。 OffScreen：记录屏幕使用时间、专注时间，最大优点是番茄钟的白名单和手动添加功能，同时能从潮汐导入睡眠数据，数据图表美观。 Things：记录 todo-list 和它使用的番茄个数，最大优点是区分 Area / Project / todo，能与 Notion 的项目管理一一对应。 Notion：个人知识库，最大优点是可操作性强且美观。 DayOne：日记本，最大优点回顾那年今日的功能，还可以自定义设置模板。 Flomo：记录碎片、灵感、问题、线索等一切。最大优点是轻量，记录无负担。  Notion 是知识库，可容纳性强，适合周维度或更长维度的记录。参考P.A.R.A. 的 Notion 实践一文，在 Notion 搭建了 Projects-Areas-Resources-Archives 知识管理流程，其中 Project 和 Area 与 Things 保持一致，在 Things 中拆解具体每日 todo，每周末汇总完成的事项，把结果反向推回到 Notion 中。Resources 通过何谓渐进式总结阅读法，一层层提取笔记。Archives 归档所有已完成项目和笔记。
+DayOne 适合日维度的记录。潮汐和 OffScreen 的统计图表贴进日记，睡前写写每日情绪，大事件，小成就等等。日记是一项自由的书写活动，伴随着认真度过的每一天。
+Flomo 适合随时随地记录。生活观察、奇怪想法、灵感、金句、反常识、困惑&amp;hellip;&amp;hellip;每周定期整理一次，有的卡片成了写作素材，有的卡片成了反思线索，有的卡片转为行动清单。</description>
+    </item>
+    
+  </channel>
+</rss>

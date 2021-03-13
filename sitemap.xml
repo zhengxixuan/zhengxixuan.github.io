@@ -9,17 +9,32 @@
   
   <url>
     <loc>https://zhengxixuan.github.io/posts/</loc>
-    <lastmod>2020-08-02T20:42:00+00:00</lastmod>
+    <lastmod>2021-01-01T20:42:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://zhengxixuan.github.io/tags/</loc>
-    <lastmod>2020-08-02T20:42:00+00:00</lastmod>
+    <lastmod>2021-01-01T20:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhengxixuan.github.io/tags/%E5%A4%8D%E7%9B%98/</loc>
+    <lastmod>2021-01-01T20:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhengxixuan.github.io/tags/%E5%B7%A5%E5%85%B7%E7%AE%B1/</loc>
+    <lastmod>2021-01-01T20:42:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://zhengxixuan.github.io/</loc>
-    <lastmod>2020-08-02T20:42:00+00:00</lastmod>
+    <lastmod>2021-01-01T20:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhengxixuan.github.io/posts/2021-01-01-new-workflow/</loc>
+    <lastmod>2021-01-01T20:42:00+00:00</lastmod>
   </url>
   
   <url>
@@ -48,6 +63,51 @@
   </url>
   
   <url>
+    <loc>https://zhengxixuan.github.io/posts/2020-07-26-week02-books/</loc>
+    <lastmod>2020-07-26T20:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhengxixuan.github.io/tags/%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2020-07-26T20:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhengxixuan.github.io/tags/%E7%BD%91%E7%BB%9C%E7%A7%91%E5%AD%A6/</loc>
+    <lastmod>2020-07-26T20:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhengxixuan.github.io/tags/%E7%BF%BB%E4%B9%A6/</loc>
+    <lastmod>2020-07-26T20:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhengxixuan.github.io/posts/2020-07-19-week01-books/</loc>
+    <lastmod>2020-07-19T20:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhengxixuan.github.io/tags/%E8%A1%8C%E5%8A%A8/</loc>
+    <lastmod>2020-07-19T20:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhengxixuan.github.io/posts/2020-04-01-the-same-brain/</loc>
+    <lastmod>2020-04-01T20:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhengxixuan.github.io/tags/%E5%90%AF%E5%8F%91%E5%BC%8F/</loc>
+    <lastmod>2020-04-01T20:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhengxixuan.github.io/tags/%E8%AE%A4%E7%9F%A5%E5%81%8F%E5%B7%AE/</loc>
+    <lastmod>2020-04-01T20:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zhengxixuan.github.io/posts/2020-03-20-atomic-habits/</loc>
     <lastmod>2020-03-20T20:42:00+00:00</lastmod>
   </url>
@@ -58,13 +118,18 @@
   </url>
   
   <url>
-    <loc>https://zhengxixuan.github.io/tags/%E5%B7%A5%E5%85%B7%E7%AE%B1/</loc>
-    <lastmod>2020-03-20T20:42:00+00:00</lastmod>
+    <loc>https://zhengxixuan.github.io/posts/2020-03-06-not-only-food/</loc>
+    <lastmod>2020-03-06T20:42:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhengxixuan.github.io/tags/%E8%A1%8C%E5%8A%A8/</loc>
-    <lastmod>2020-03-20T20:42:00+00:00</lastmod>
+    <loc>https://zhengxixuan.github.io/tags/%E7%83%AD%E6%83%85/</loc>
+    <lastmod>2020-03-06T20:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhengxixuan.github.io/tags/%E7%BE%8E%E9%A3%9F/</loc>
+    <lastmod>2020-03-06T20:42:00+00:00</lastmod>
   </url>
   
   <url>
@@ -74,11 +139,6 @@
   
   <url>
     <loc>https://zhengxixuan.github.io/tags/%E7%90%86%E6%80%A7/</loc>
-    <lastmod>2020-03-04T20:42:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zhengxixuan.github.io/tags/%E8%AE%A4%E7%9F%A5%E5%81%8F%E5%B7%AE/</loc>
     <lastmod>2020-03-04T20:42:00+00:00</lastmod>
   </url>
   
