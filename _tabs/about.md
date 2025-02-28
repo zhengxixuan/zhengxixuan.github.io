@@ -22,6 +22,6 @@ I am developing courses on how to use generative AI. At the same time, I am orga
 
 ## Link
 
-- Daily Blog: [Nico ai life](nicoai.life)
+- Daily Blog: [Nico ai life](https://nicoai.life/)
 - Github: [Nico](https://github.com/zhengxixuan)
 - Twitter: [Nico](https://x.com/nicotalkaboutai)
