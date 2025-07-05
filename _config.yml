@@ -9,17 +9,17 @@ theme: jekyll-theme-chirpy
 lang: en
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
+timezone: Asia/Shanghai
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Nico Cheng # the main title
+title: 郑嘻嘻 Nico # the main title
 
-tagline: A creator # it will display as the subtitle
+tagline: 一名创作者 # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A blog about Nico Cheng's life, work, and thoughts.
+  记录生活，思考，研究，实践
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
