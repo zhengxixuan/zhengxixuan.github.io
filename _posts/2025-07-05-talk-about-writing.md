@@ -1,11 +1,10 @@
 ---
 title: 谈谈写作
 description: 记录现在的我此刻对写作的一些认知，以待后续观察改进。
-author: 郑嘻嘻 Nico
+author: Nico
 date: 2025-07-05 18:30:00 +0800
 categories: [Life, Writing]
 tags: [inspiration]
-pin: true
 ---
 
 之所以写这篇短文，是因为我想要认真对待写作这件事了。
