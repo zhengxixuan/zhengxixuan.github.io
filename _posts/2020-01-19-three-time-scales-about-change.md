@@ -31,10 +31,6 @@ tags: [notes]
 
 每种结构内部又存在不同。**有些结构像钟摆，会造成要摇摆不定的状态；有些结构像火车，会把我们带往最后目的地。** 选择一种好的结构，才能带来真实而持续的改变。文明的重要发展都是靠创造得来的，但讽刺的是，大部分人所接受的都不是创造的教育。**「创造者结构」正是一种直接朝着最后解决方案前进的结构，最终创造出自己想要的成果。** 这种结构中的张力是在我们认清愿景与现况之间有差异时，产生的那股正面力量，而不是传统问题解决结构中的那股对抗力量。
 
-<img src="http://xixuan.img-cn-shanghai.aliyuncs.com/note/2020-01-19-2020011901.jpg" style="zoom:80%;" />
-
-> 图片来源：https://tinyurl.com/vwc8nme
-
 总而言之，**改变不是靠解决问题，而是靠创造出新的结构。** 建立「创造者结构」，最小阻力之路就会带着你往自己真正希望的方向前进。
 
 ## 年/月 维度：WOOP  大法
@@ -49,10 +45,6 @@ WOOP 大法包括四个步骤：
 4. **Plan 计划**：你将对如何应对以上的困难？确定一个你可以采取的行动或想法。
 
 下图是一个实例：
-
-<img src="http://xixuan.img-cn-shanghai.aliyuncs.com/note/2020-01-08-woop-sample.jpg" style="zoom:50%;" />
-
-> 图片来源：https://url.cn/5ramTSn
 
 WOOP 的最后一步是针对可能遇到的困难，提出相应的行动指南。如果每天使用它，我会感觉自己每天都在和各种困难做斗争，有点沮丧呢。或许它更合适用来做月计划或年计划，主要用来提醒我们当计划遇到阻碍时，不是停滞，而是要立刻去执行应对方案。
 
@@ -71,10 +63,6 @@ WOOP 的最后一步是针对可能遇到的困难，提出相应的行动指南
 3. **「然后，庆祝完成了新习惯！」** —— 选择一种方式来庆祝完成了这个微小改变，比如对自己说“你真棒”。
 
 BJ Fogg 在新书《Tiny Habits: The Small Changes That Change Everything》中，为我们提供了一张微习惯养成卡：
-
-<img src="http://xixuan.img-cn-shanghai.aliyuncs.com/note/2020-01-19-TinyHabitsRecipeCard.png" style="zoom:50%;" />
-
-> 图片来源：https://tinyurl.com/r226kps
 
 Tiny Habits 与 WOOP 大法有类似之处，两者均使用了「执行意图」这个技巧，但相比而言，Tiny Habits 强调 **「以更容易的方式，获得更多小成就感。」**
 

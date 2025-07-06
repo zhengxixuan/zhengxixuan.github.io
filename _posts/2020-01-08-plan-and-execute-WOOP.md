@@ -17,10 +17,6 @@ tags: [notes]
 
 执行意图是一种新的思考范式，使用「if...then...」这个表达式来思考。为了解释执行意图，必须提到另一个相对的概念「目标意图」，格尔维茨提到，人们通常用目标意图来思考问题，即“我想要......”，而他创造性地转换视角，将目标变为执行，即：“如果......那么我就......”。如下图所提及的三个案例：
 
-![](http://xixuan.img-cn-shanghai.aliyuncs.com/note/2020-01-08-Implementation%20intentions.png)
-
-> 图片来源：https://url.cn/5APhxDq
-
 执行意图强调在执行阶段，弱化意识，激活无意识，帮助人们减轻目标的干扰。**从复杂笼统的「我想」变成简单明确的「我做」。**
 
 ## WOOP 思维
@@ -33,10 +29,6 @@ Oettingen 在《WOOP 思维心理学》一书中提到：心理对照与执行�
 > - 另一方面，执行意图可以通过减少目标与行为之间的鸿沟，增强心理对照的效果。研究表明心理对照与执行意图能有效地促进目标追寻。
 
 WOOP 包括四个步骤：Wish 愿望、Outcome 结果、Obstacle 障碍、Plan 计划，下图是一个实例：
-
-![](http://xixuan.img-cn-shanghai.aliyuncs.com/note/2020-01-08-woop-sample.jpg)
-
-> 图片来源：https://url.cn/5ramTSn
 
 你可以尝试按照这四步，重新梳理一遍自己的新年目标。
 
