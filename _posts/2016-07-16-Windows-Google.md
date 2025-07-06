@@ -13,10 +13,10 @@ tags: [guide]
 - 编辑器：[Sublime Text](https://www.sublimetext.com/)
 - 云储存：[DropBox](https://www.dropbox.com/)
 - 版本控制工具：[Git](https://git-scm.com/)
-- 笔记应用：[有道云笔记](note.youdao.com/)
+- 笔记应用：有道云笔记
 - 硬盘搜索：[Everything](https://www.voidtools.com/)
-- 任务管理界面：[Clover](ejie.me/)
-- 解压缩：[7-Zip](http://www.7-zip.org/)
+- 任务管理界面：Clover
+- 解压缩：[7-Zip](https://www.7-zip.org/)
 
 
 ### Google 搜索规则和技巧

@@ -61,7 +61,7 @@ tags: [guide]
 - 开智学堂课程《像黑客一样创作》
 - [Github Help](https://help.github.com/)
 - [Github Guides](https://guides.github.com/)
-- [Stackover Flow](http://stackoverflow.com/)
+- [Stackover Flow](https://stackoverflow.com/)
 
 ### 学习过程中犯过的傻
 

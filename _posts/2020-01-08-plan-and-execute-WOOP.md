@@ -77,5 +77,5 @@ WOOP 帮助人们做他们真正想做的事情。当我意识到「WOOP 思维�
 - [Peter Gollwitzer —— 维基百科](https://en.wikipedia.org/wiki/Peter_Gollwitzer)
 - [Gabriele Oettingen —— 维基百科](https://en.wikipedia.org/wiki/Gabriele_Oettingen)
 - Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. *American psychologist*, *54*(7), 493.
-- [WOOP my life](http://woopmylife.org/page)
+- [WOOP my life](https://woopmylife.org/page)
   

@@ -59,5 +59,3 @@ tags: [notes]
 - [第八章 记忆 - PowerPoint Presentation](https://www.slideserve.com/lane/4010775)
 - [ Neural Correlates of Working Memory (Andrews, 2014, August 26) ](https://www.slideshare.net/OzellaBrundidge/neural-correlates-of-working-memory)
 
-- [这，就是工作记忆——by 黄扬名](http://www.sohu.com/a/225725279_380923)
-
