@@ -1,7 +1,6 @@
 ---
 title: 三种时间尺度的改变
 description: 改变很难吗？也许吧
-author: Nico
 date: 2020-01-19 18:30:00 +0800
 categories: [Life, Reading]
 tags: [notes]

@@ -1,7 +1,6 @@
 ---
 title: 人类记忆之谜：你不可不知的「工作记忆」
 description: 关于工作记忆的最新研究
-author: Nico
 date: 2020-02-08 18:30:00 +0800
 categories: [Life, Reading]
 tags: [notes]

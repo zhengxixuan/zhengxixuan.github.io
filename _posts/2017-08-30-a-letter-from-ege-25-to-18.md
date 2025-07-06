@@ -1,7 +1,6 @@
 ---
 title: 在25岁时写给18岁的自己
 description: 和过去的自己对话，才能去到更好的未来。
-author: Nico
 date: 2017-08-30 18:30:00 +0800
 categories: [Life, Writing]
 tags: [narrative]

@@ -1,7 +1,6 @@
 ---
 title: WOOP思维助力新年计划
 description: 新年伊始，提笔准备写一写 2020 年的计划，想起去年收获的一个新工具——WOOP，尝试用于新年计划。
-author: Nico
 date: 2020-01-08 18:30:00 +0800
 categories: [Life, Reading]
 tags: [notes]

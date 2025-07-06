@@ -1,7 +1,6 @@
 ---
 title: 《认知天性》：记得更牢，学得更好
 description: 学习科学的最新研究结果
-author: Nico
 date: 2020-02-12 18:30:00 +0800
 categories: [Life, Reading]
 tags: [notes]

@@ -1,7 +1,6 @@
 ---
 title: 优化电脑系统，使之成为得心应手的工具
 description: 面对如洪流般涌来的信息，我们要掌握准确识别、获取的能力，需依赖于简便工具。
-author: Nico
 date: 2016-07-16 18:30:00 +0800
 categories: [Life, Tools]
 tags: [guide]

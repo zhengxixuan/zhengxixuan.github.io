@@ -1,7 +1,6 @@
 ---
 title: 像一棵树一样生长
 description: 《成长的心智》读书笔记
-author: Nico
 date: 2024-12-18 18:30:00 +0800
 categories: [Life, Reading]
 tags: [narrative]

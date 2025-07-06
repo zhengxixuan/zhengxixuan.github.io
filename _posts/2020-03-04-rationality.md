@@ -1,7 +1,6 @@
 ---
 title: 愿理性之光，伴你前行
 description: 理性使人能够改造自我，进而从实际及象征意义上超越动物的状态。
-author: Nico
 date: 2020-03-04 18:30:00 +0800
 categories: [Life, Reading]
 tags: [notes]

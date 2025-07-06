@@ -1,7 +1,6 @@
 ---
 title: 《我们为什么会生病》：精密但脆弱的身体
 description: 认知与身体共同构成了自我。
-author: Nico
 date: 2020-02-20 18:30:00 +0800
 categories: [Life, Reading]
 tags: [notes]

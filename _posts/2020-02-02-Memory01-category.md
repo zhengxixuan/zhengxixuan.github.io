@@ -1,7 +1,6 @@
 ---
 title: 人类记忆之谜：记忆如何分类？
 description: 我们为什么能够记住东西？
-author: Nico
 date: 2020-02-02 18:30:00 +0800
 categories: [Life, Reading]
 tags: [notes]

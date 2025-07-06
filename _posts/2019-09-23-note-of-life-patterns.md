@@ -1,7 +1,6 @@
 ---
-title: 一点一点发现我的模式
+title: 一点一点构建我的模式
 description: 《人生模式》读书笔记
-author: Nico
 date: 2019-09-23 18:30:00 +0800
 categories: [Life, Reading]
 tags: [narrative]

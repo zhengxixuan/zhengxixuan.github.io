@@ -1,7 +1,6 @@
 ---
 title: 如何利用 Github 和 Jekyll 快速搭建个人博客
 description: 第一次搭建博客，Windows 系统。
-author: Nico
 date: 2016-07-15 18:30:00 +0800
 categories: [Life, Tools]
 tags: [guide]

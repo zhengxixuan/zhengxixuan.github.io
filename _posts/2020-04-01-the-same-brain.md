@@ -1,7 +1,6 @@
 ---
 title: 同一颗大脑
 description: 人类常见的认知偏差
-author: Nico
 date: 2020-04-01 18:30:00 +0800
 categories: [Life, Reading]
 tags: [notes]
