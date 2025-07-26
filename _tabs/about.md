@@ -24,5 +24,5 @@ order: 4
 
 ## 链接
 
-- 公众号：[游于天地间](https://mp.weixin.qq.com/s/FBFo1OejKZ2jZhFQl-Qd9g)
+- 公众号：[游于天地间](https://mp.weixin.qq.com/s/pvzlqEIkakU6hTQTPjDuQg)
 - 推特：[Nico郑嘻嘻](https://x.com/nicotalkaboutai)
