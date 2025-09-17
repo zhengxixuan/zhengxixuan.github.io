@@ -1,5 +1,5 @@
 ---
-title: 大语言模型的最大优势在于理解，而非创造
+title: Vibe Coding + Agentic Coding 编程新范式
 description: 重新定义软件开发的本质：从手工编写代码转向智能协作创造，从关注实现细节转向专注问题本质，从个人技能竞争转向人机协作效率。
 date: 2025-09-15 23:30:00 +0800
 categories: [AI, cognize]
