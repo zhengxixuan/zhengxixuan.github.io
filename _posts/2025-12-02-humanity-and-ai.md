@@ -1,7 +1,7 @@
 ---
 title: 人机共生：1+1>2
 description: 人类智能与数字智能共同进化，携手并进，**我们终将前往那无法独自抵达之境。**
-date: 2025-12-22 15:30:00 +0800
+date: 2025-12-02 15:30:00 +0800
 categories: [AI, cognize]
 tags: [thinking]
 ---
