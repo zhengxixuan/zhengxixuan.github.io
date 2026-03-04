@@ -2,7 +2,7 @@
 title: 谈谈阅读
 description: 阅读，本质上是一场认知的“自举”。
 date: 2026-03-02 18:30:00 +0800
-categories: [Life, Reading]
+categories: [Life, Thinking]
 tags: [inspiration]
 ---
 

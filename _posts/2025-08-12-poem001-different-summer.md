@@ -2,7 +2,7 @@
 title: Poem001-不一样的夏天
 description: 这是我写的第一首诗，在33岁的夏天
 date: 2025-08-12 18:30:00 +0800
-categories: [Life, Writing]
+categories: [Life, Poem]
 tags: [inspiration]
 ---
 
