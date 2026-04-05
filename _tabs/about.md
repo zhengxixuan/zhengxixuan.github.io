@@ -28,5 +28,5 @@ order: 4
 
 ## 链接
 
-- 公众号：[游于天地间](https://mp.weixin.qq.com/s?__biz=MzI0NDg1NzY0NQ==&mid=2247483880&idx=1&sn=63c901657477e343da700e71e820dd4b&chksm=e9562faade21a6bc08f938694864401814338a33cd93cf99c8626db1aeb8962bdac722acc1ba&cur_album_id=4061995674085359619&scene=190#rd)
+- 公众号：[游于天地间](https://mp.weixin.qq.com/s/nKVXz3kroars_E0oUJ-vgw)
 - 推特：[郑嘻嘻 Nico](https://x.com/NicoAIstudio)
