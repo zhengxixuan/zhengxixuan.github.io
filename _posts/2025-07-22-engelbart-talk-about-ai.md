@@ -2,7 +2,7 @@
 title: 恩格尔巴特会如何看待生成式AI
 description: 近两年兴起的生成式 AI，到底是增强人类心智的强大杠杆，还是一个让我们自身能力萎缩、过于迷人的幻象？
 date: 2025-07-22 08:30:00 +0800
-categories: [AI, cognize]
+categories: [AI, Cognize]
 tags: [thinking]
 ---
 
@@ -102,4 +102,4 @@ tags: [thinking]
 
 **恩格尔巴特试图展示的是一种全新的知识工作“生活方式”，一个旨在增强集体智慧的完整社会技术系统。**
 
->“你们要为机器做所有那些事？那你们要为人类做什么呢？” (You're going to do all that for the machines? What are you going to do for the people?) 
+>“你们要为机器做所有那些事？那你们要为人类做什么呢？” (You're going to do all that for the machines? What are you going to do for the people?)

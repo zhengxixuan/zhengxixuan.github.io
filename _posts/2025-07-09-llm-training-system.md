@@ -2,7 +2,7 @@
 title: 大模型训练生态
 description: 盘点近三年LLM训练的生态，包括开源和商业。
 date: 2025-07-09 08:30:00 +0800
-categories: [AI, training]
+categories: [AI, Training]
 tags: [thinking]
 ---
 

@@ -2,7 +2,7 @@
 title: 如何善用大语言模型：扬长避短
 description: 善用大语言模型，需遵循四大原则：认知分工、交叉验证、巧妙提问、扩展能力。
 date: 2025-09-01 23:30:00 +0800
-categories: [AI, cognize]
+categories: [AI, Cognize]
 tags: [thinking]
 ---
 

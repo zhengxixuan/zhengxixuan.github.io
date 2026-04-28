@@ -2,7 +2,7 @@
 title: AI coding 实践的一点经验
 description: 人如何更好地与 AI 协作，始终是一个核心问题。
 date: 2025-12-01 23:30:00 +0800
-categories: [AI, reflection]
+categories: [AI, Reflection]
 tags: [practice]
 ---
 

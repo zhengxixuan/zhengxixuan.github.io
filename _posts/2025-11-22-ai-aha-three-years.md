@@ -2,8 +2,8 @@
 title: AI时代前三年，我的啊哈时刻，我的改变，以及我的担忧
 description: 我们正在经历的，不仅是技术的革命，更是对“何以为人”这一古老哲学命题的重新定义。
 date: 2025-11-22 23:30:00 +0800
-categories: [AI, cognize]
-tags: [thinking]
+categories: [AI, Reflection]
+tags: [practice]
 ---
 
 **从 2022 年 11 月 30 日那天开始，一个全新的时代开启了。**

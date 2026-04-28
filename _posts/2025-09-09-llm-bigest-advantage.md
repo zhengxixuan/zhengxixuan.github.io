@@ -2,7 +2,7 @@
 title: 大语言模型的最大优势在于理解，而非创造
 description: LLM 真正颠覆性的力量，并非天马行空的“创造”，而在于其卓越的"理解"能力。
 date: 2025-09-09 23:30:00 +0800
-categories: [AI, cognize]
+categories: [AI, Cognize]
 tags: [thinking]
 ---
 

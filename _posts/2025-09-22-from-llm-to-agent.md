@@ -2,7 +2,7 @@
 title: AI coding 的进化本质：从 LLM 到 Agent
 description: 从 LLM 到 Agent 的进化，是 AI 从一个“知识工具”向一个“生产力伙伴”的飞跃。
 date: 2025-09-22 23:30:00 +0800
-categories: [AI, cognize]
+categories: [AI, Cognize]
 tags: [thinking]
 ---
 

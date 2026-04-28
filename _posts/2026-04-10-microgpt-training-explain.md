@@ -2,7 +2,7 @@
 title: microgpt 用 200 行代码揭秘神经网络训练算法
 description: microgpt.py 是 Andrej Karpathy 最近刚刚发布的一个 200 行 python 代码文件，极简地指出了 GPT 的训练与推理算法。
 date: 2026-04-10 18:30:00 +0800
-categories: [AI, training]
+categories: [AI, Training]
 tags: [thinking]
 ---
 

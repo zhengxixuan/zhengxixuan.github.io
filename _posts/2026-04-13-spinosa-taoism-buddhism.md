@@ -2,7 +2,7 @@
 title: 斯宾诺莎、老庄、佛学，对「世界是什么」的不同理解，对「自我、身体、行动、修行」四个生命课题的阐释
 description: 哲学最深刻的，从来不只是解释世界。它是在重写你与世界的关系。
 date: 2026-04-13 18:30:00 +0800
-categories: [Life, Thinking]
+categories: [Life, Cultivate]
 tags: [inspiration]
 ---
 

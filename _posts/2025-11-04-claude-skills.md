@@ -2,7 +2,7 @@
 title: 又一次能力跃迁：从 Claude Code 到 Claude Skills
 description: Claude Skills 代表着一种将隐性知识显性化、程序化的能力。
 date: 2025-11-04 23:30:00 +0800
-categories: [AI, cognize]
+categories: [AI, Cognize]
 tags: [thinking]
 ---
 

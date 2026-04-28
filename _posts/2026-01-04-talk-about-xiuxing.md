@@ -2,7 +2,7 @@
 title: 谈谈修行
 description: 所谓修行的本质就是破相破执，得真如心，回归“整体”。
 date: 2026-01-04 18:30:00 +0800
-categories: [Life, Thinking]
+categories: [Life, Cultivate]
 tags: [inspiration]
 ---
 

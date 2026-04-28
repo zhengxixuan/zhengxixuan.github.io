@@ -2,7 +2,7 @@
 title: 设计 Agent 系统，本质上是设计一张“摩擦地图”
 description: AI 时代我们要设计的，不再只是“会执行的模型”，而是“被正确阻力结构塑形过的行动系统”。
 date: 2026-04-05 17:30:00 +0800
-categories: [AI, cognize]
+categories: [AI, Cognize]
 tags: [thinking]
 ---
 
