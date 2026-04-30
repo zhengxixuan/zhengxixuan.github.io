@@ -2,7 +2,7 @@
 title: Richard Susskind 教授《如何思考 AI》读书笔记
 description: “魔盒才打开了一半”，我们或许只剩下大约十年的窗口期来做出决定。
 date: 2025-09-30 18:30:00 +0800
-categories: [Life, Reading]
+categories: [AI, Cognize]
 tags: [notes]
 ---
 
